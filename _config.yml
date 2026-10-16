@@ -65,7 +65,8 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+# (No blog posts yet, so the RSS feed is turned off. Uncomment once you start posting.)
+#rss-description: Notes on data science, machine learning and astrophysics by Zhenlin Zhu
 
 # --- General options --- #
 
@@ -93,7 +94,7 @@ feed_show_tags: true
 post_search: true
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "Zhenlin Zhu, Cassie Zhu, data scientist, machine learning, astrophysics, X-ray astronomy, galaxy clusters, Galactic Center, UCLA, Leiden University, SRON"
 
 # --- Colours / background image --- #
 
@@ -119,11 +120,11 @@ footer-hover-col: "#0085A1"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
-#mobile-theme-col: "#0085A1"
+mobile-theme-col: "#1f2a3a"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/custom.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:

@@ -1,5 +1,125 @@
 ---
-layout: home
-title: Zhenlin Zhu
-subtitle: Welcome to my personal zone!
+layout: default
+title: Zhenlin Zhu, PhD
+share-title: Zhenlin (Cassie) Zhu, PhD | Data Scientist & Astrophysicist
+share-description: PhD data scientist and astrophysicist at UCLA. Statistical modeling, machine learning and GenAI, built on six years of turning large, messy scientific data into answers.
+share-img: /assets/img/profile.jpg
 ---
+
+{% assign email = site.social-network-links.email %}
+
+<section class="zz-hero">
+  <div class="zz-hero-photo">
+    <img src="{{ '/assets/img/profile.jpg' | relative_url }}" alt="Portrait of Zhenlin Zhu" width="600" height="600">
+  </div>
+  <div class="zz-hero-text">
+    <p class="zz-eyebrow">Data Scientist &middot; Astrophysicist &middot; UCLA</p>
+    <h1>Hi, I'm Zhenlin <span class="zz-nick">(Cassie)</span> Zhu.</h1>
+    <p class="zz-lead">
+      I build statistical and machine-learning models on large, messy data. For six years that data
+      came from X-ray telescopes; today I apply the same toolkit to classification, recommendation
+      and GenAI problems.
+    </p>
+    <p>
+      I'm a postdoctoral scholar at UCLA, with a PhD in astrophysics from Leiden University
+      and the Netherlands Institute for Space Research (SRON). I'm interested in data science and
+      machine-learning roles in tech and finance.
+    </p>
+    <div class="zz-actions">
+      <a class="btn zz-btn zz-btn-primary" href="{{ '/resume' | relative_url }}"><i class="fas fa-file-alt" aria-hidden="true"></i> View CV</a>
+      <a class="btn zz-btn" href="https://www.linkedin.com/in/{{ site.social-network-links.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+      <a class="btn zz-btn" href="https://github.com/{{ site.social-network-links.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+      <a class="btn zz-btn" href="mailto:{{ email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+    </div>
+  </div>
+</section>
+
+<section class="zz-stats" aria-label="At a glance">
+  <div><strong>6+</strong><span>years of modeling &amp; data work</span></div>
+  <div><strong>15</strong><span>peer-reviewed papers, 6 as first author</span></div>
+  <div><strong>30+</strong><span>talks at international conferences</span></div>
+  <div><strong>3</strong><span>countries: China, the Netherlands, the US</span></div>
+</section>
+
+<section class="zz-section">
+  <h2>What I work on</h2>
+  <div class="zz-cards">
+    <div class="zz-card">
+      <h3><i class="fas fa-brain" aria-hidden="true"></i> Data science &amp; ML</h3>
+      <p>
+        Predictive modeling, ranking and recommendation, A/B testing, and LLM applications such as
+        retrieval-augmented generation, from feature engineering through deployment and monitoring.
+      </p>
+    </div>
+    <div class="zz-card">
+      <h3><i class="fas fa-satellite" aria-hidden="true"></i> High-energy astrophysics</h3>
+      <p>
+        How shocks, turbulence and magnetic fields shape hot plasma, from the Galactic Center
+        to galaxy clusters, using <em>Chandra</em> and <em>XMM-Newton</em> X-ray data.
+        <a href="{{ '/research' | relative_url }}">More on my research &rarr;</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="zz-section">
+  <h2>Experience</h2>
+  <ol class="zz-timeline">
+    <li>
+      <span class="zz-when">Nov 2024 &ndash; present</span>
+      <h3>Research Scientist Postdoctoral Scholar <span>&middot; UCLA, Los Angeles</span></h3>
+      <p>Built an end-to-end feature-extraction and multi-class classification pipeline with tree-based models (Random Forest, XGBoost, LightGBM), reaching 0.93 macro ROC-AUC on 5,000+ samples.</p>
+    </li>
+    <li>
+      <span class="zz-when">May &ndash; Aug 2025</span>
+      <h3>Machine Learning Engineer Intern <span>&middot; Eth Tech, Newark</span></h3>
+      <p>Fine-tuned an image-captioning model (+16% BLEU-4), built a two-tower retrieval model that lifted CTR by 1.2% in an A/B test, and automated incremental training with Airflow.</p>
+    </li>
+    <li>
+      <span class="zz-when">Sep 2019 &ndash; Oct 2024</span>
+      <h3>PhD Researcher <span>&middot; SRON &amp; Leiden University</span></h3>
+      <p>Wrote SQL and Python pipelines for large unstructured X-ray datasets, and used statistical anomaly detection to find gas clumps in galaxy clusters.</p>
+    </li>
+    <li>
+      <span class="zz-when">Jun &ndash; Sep 2022</span>
+      <h3>Data Scientist Intern <span>&middot; Pivigo, London</span></h3>
+      <p>Built a hybrid recommender for 100k+ retail products and ~1M customers (CNNs, GRU4Rec, Word2Vec), and improved ranking precision 2.4&times; with learning-to-rank.</p>
+    </li>
+  </ol>
+</section>
+
+<section class="zz-section">
+  <h2>Selected projects</h2>
+  <div class="zz-cards zz-cards-3">
+    <a class="zz-card zz-project" href="https://github.com/drzhenlinzhu/Paper_QA_Chatbot">
+      <h3>Paper Q&amp;A chatbot</h3>
+      <p>Ask questions about any uploaded paper. RAG with LangChain, FAISS and GPT-4o, served as a Streamlit app.</p>
+      <span class="zz-tags">GenAI &middot; RAG &middot; LangChain</span>
+    </a>
+    <a class="zz-card zz-project" href="https://github.com/drzhenlinzhu/XRaySource_TreeClassifier">
+      <h3>X-ray source classifier</h3>
+      <p>Feature extraction and multi-class classification of astronomical X-ray sources with gradient-boosted trees.</p>
+      <span class="zz-tags">XGBoost &middot; LightGBM &middot; Interpretability</span>
+    </a>
+    <a class="zz-card zz-project" href="https://github.com/drzhenlinzhu/Predictive_Lead_Scoring_for_ExtaaLearn-">
+      <h3>Predictive lead scoring</h3>
+      <p>Identifies high-conversion leads from behavioral data; tuning raised accuracy from 84% to 90%.</p>
+      <span class="zz-tags">Classification &middot; scikit-learn</span>
+    </a>
+  </div>
+</section>
+
+<section class="zz-section">
+  <h2>Toolkit</h2>
+  <ul class="zz-chips">
+    <li>Python</li><li>SQL</li><li>R</li><li>PyTorch</li><li>scikit-learn</li><li>XGBoost / LightGBM</li>
+    <li>LLMs &amp; RAG</li><li>LangChain</li><li>PySpark</li><li>Airflow</li><li>MLflow</li><li>AWS</li>
+    <li>A/B testing</li><li>Time-series forecasting</li><li>Tableau</li><li>Power BI</li>
+  </ul>
+</section>
+
+<section class="zz-contact">
+  <h2>Let's talk</h2>
+  <p>I'm happy to hear about data science roles, collaborations, or anything space-related.</p>
+  <a class="btn zz-btn zz-btn-primary" href="mailto:{{ email }}"><i class="fas fa-envelope" aria-hidden="true"></i> {{ email }}</a>
+</section>
