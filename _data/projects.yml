@@ -1,0 +1,51 @@
+# Projects shown on /projects and (when featured: true) on the home page.
+# To add a project, copy one block and edit it. Order here = order on the site.
+
+- title: Paper Q&A Chatbot
+  icon: fas fa-comments
+  category: GenAI · RAG
+  featured: true
+  summary: Upload academic papers and ask questions about them in plain language. Answers are grounded in retrieved passages from the papers themselves.
+  points:
+    - Extracts PDF text with PyMuPDF, splits it into overlapping chunks and embeds them with OpenAI embeddings
+    - Indexes chunks in FAISS and answers through a LangChain RetrievalQA chain on GPT-4o
+    - Streamlit app with in-browser uploads, multi-paper search and persistent chat history
+  stack: [Python, LangChain, FAISS, OpenAI API, Streamlit]
+  repo: https://github.com/drzhenlinzhu/Paper_QA_Chatbot
+  demo: https://drzhenlinzhu-paper-qa-chatbot-app-new-irwnmr.streamlit.app/
+
+- title: X-ray Source Classifier
+  icon: fas fa-satellite-dish
+  category: Machine learning · Astronomy
+  featured: true
+  summary: Classifies X-ray sources from NASA's Chandra Source Catalog into four astrophysical classes using spectral and variability features.
+  points:
+    - Built features from hardness ratios, spectral fits and variability measures for 8,000+ labeled sources
+    - Benchmarked Decision Tree, Random Forest, XGBoost and LightGBM with cross-validated tuning
+    - Best models reach 78% accuracy and 0.94 macro ROC-AUC; feature importance shows spectral shape drives the predictions
+  stack: [Python, scikit-learn, XGBoost, LightGBM, Seaborn]
+  repo: https://github.com/drzhenlinzhu/XRaySource_TreeClassifier
+
+- title: Predictive Lead Scoring
+  icon: fas fa-bullseye
+  category: Classification · Business analytics
+  featured: true
+  summary: Predicts which leads of an EdTech startup will convert to paying customers, so the sales team can focus where it matters.
+  points:
+    - Cleaned and explored lead data covering demographics, acquisition channel and engagement
+    - Trained and tuned decision-tree and random-forest models, evaluated with ROC-AUC, precision, recall and F1
+    - Found website time and first-contact channel to be the strongest predictors, and turned them into concrete marketing recommendations
+  stack: [Python, pandas, scikit-learn, Matplotlib]
+  repo: https://github.com/drzhenlinzhu/Predictive_Lead_Scoring_for_ExtaaLearn-
+
+- title: ScienceIDE Benchmark
+  icon: fas fa-flask
+  category: AI agents · Evaluation
+  featured: false
+  contribution: true
+  summary: An open benchmark that turns real scientific codebases into tasks for evaluating and training AI coding agents.
+  points:
+    - Contributed expert-validated scientific coding tasks
+    - Defined task setups and executable scientific checks, so agents are graded on numerically correct science rather than code that merely compiles
+  stack: [Python, Docker, Shell]
+  repo: https://github.com/aitofound/ScienceIDE_Env

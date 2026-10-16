@@ -1,0 +1,36 @@
+---
+layout: page
+title: Projects
+subtitle: Things I've built in machine learning, GenAI and scientific data
+share-title: Projects | Zhenlin Zhu
+---
+
+<p class="zz-intro">
+  A selection of my work on GitHub. Each project links to its code; some also have a live demo.
+  More on <a href="https://github.com/{{ site.social-network-links.github }}">my GitHub profile</a>.
+</p>
+
+<div class="zz-projects">
+{% for p in site.data.projects %}
+  <article class="zz-proj" id="{{ p.title | slugify }}">
+    <div class="zz-proj-head">
+      <span class="zz-proj-icon"><i class="{{ p.icon }}" aria-hidden="true"></i></span>
+      <div>
+        <p class="zz-proj-cat">{{ p.category }}{% if p.contribution %} &middot; Contributor{% endif %}</p>
+        <h2>{{ p.title | xml_escape }}</h2>
+      </div>
+    </div>
+    <p class="zz-proj-summary">{{ p.summary }}</p>
+    <ul class="zz-proj-points">
+      {% for pt in p.points %}<li>{{ pt }}</li>{% endfor %}
+    </ul>
+    <ul class="zz-chips zz-chips-sm" aria-label="Tech stack">
+      {% for s in p.stack %}<li>{{ s }}</li>{% endfor %}
+    </ul>
+    <div class="zz-proj-links">
+      <a class="btn zz-btn" href="{{ p.repo }}"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+      {% if p.demo %}<a class="btn zz-btn zz-btn-primary" href="{{ p.demo }}"><i class="fas fa-play" aria-hidden="true"></i> Live demo</a>{% endif %}
+    </div>
+  </article>
+{% endfor %}
+</div>

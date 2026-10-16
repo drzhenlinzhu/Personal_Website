@@ -176,6 +176,45 @@ a.zz-project h3::after { content: " \2197"; color: var(--zz-muted); font-weight:
 }
 .zz-pdf-fallback { display: none; }
 
+/* ---------- Projects page ---------- */
+.zz-intro { font-size: 1.1rem; margin-bottom: 2rem; }
+.zz-projects { display: grid; gap: 1.5rem; }
+.zz-proj {
+  border: 1px solid var(--zz-line);
+  border-radius: 14px;
+  padding: 1.6rem 1.75rem;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(31, 42, 58, .04);
+}
+.zz-proj-head { display: flex; align-items: center; gap: 1rem; margin-bottom: .9rem; }
+.zz-proj-icon {
+  flex: 0 0 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: var(--zz-accent-soft);
+  color: var(--zz-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+.zz-proj-cat {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--zz-accent);
+  margin: 0;
+}
+.zz-proj h2 { font-size: 1.4rem; font-weight: 800; color: var(--zz-ink); margin: .1rem 0 0; }
+.zz-proj-summary { font-size: 1.05rem; color: var(--zz-ink); margin-bottom: .75rem; }
+.zz-proj-points { padding-left: 1.2rem; margin-bottom: 1rem; }
+.zz-proj-points li { font-size: .95rem; margin-bottom: .3rem; }
+.zz-chips-sm li { font-size: .78rem; padding: .2rem .7rem; }
+.zz-proj-links { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.1rem; }
+.zz-more { text-align: right; margin-top: 1rem; font-family: 'Open Sans', sans-serif; font-weight: 600; font-size: .95rem; }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 991px) {
   .zz-cards-3 { grid-template-columns: 1fr 1fr; }
